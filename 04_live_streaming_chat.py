@@ -10,7 +10,7 @@ prompt = [
     ("system","act as a brilliant ai"),
     ("user", my_question)
 ]
-print("\nai response", end = "", flush=True)
+print("\nai response\n", end = "", flush=True)
 res = llm.stream(prompt)
 for chunks in res:
     print(chunks.content, end="", flush=True)

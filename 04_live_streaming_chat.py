@@ -7,8 +7,8 @@ llm = ChatGroq(model = "allam-2-7b")
 my_question = input("Enter your query: ")
 
 prompt = [
-    ("system","act as a brilliant ai"),
-    ("user", my_question)
+    ("system","act as a teacher"),
+    ("user", f"in very easy language explain {my_question}")
 ]
 print("\nai response\n", end = "", flush=True)
 res = llm.stream(prompt)

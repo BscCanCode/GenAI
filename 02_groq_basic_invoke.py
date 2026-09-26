@@ -12,7 +12,7 @@ prompts = [
     ("user", "how to sort python list")
 ]
 # Explicitly request English in your string prompt to stop any language shifting
-res = llm.stream(prompts)
+res = llm.invoke(prompts)
 
 # CRITICAL: Use .content to strip away the messy metadata block
 print(res)

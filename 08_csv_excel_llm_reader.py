@@ -15,7 +15,7 @@ elif file_path.endswith(".csv"):
     df = pd.read_csv(file_path)
 
 else:
-    print("Incorrect file type selected")
+    print("Incorrect file type selected, try again!")
     sys.exit()
 
 compact = df.head(20)
